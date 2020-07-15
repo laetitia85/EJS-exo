@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Students Selectionnés</h2>
+        <ul id="ulStudent"></ul>
+
+            <% user.forEach(function(student) { %>
+                <li>
+                    <%= student.name %>
+                </li>
+        <% }); %>
+
+    <form action="/" method="POST"> 
+        <input type="text" name="buttonName"/>
+        <button type="submit">Add</button>
+    </form> 
+
+    <h2>Veille Assignée</h2>
+        <ul id="ulVeille"></ul>
+
+    <form action="/" method="POST"> 
+     <input type="text" name="buttonVeille"/>
+     <button type="submit">Add</button>
+    </form> 
+
+
+
+</body>
+</html>
